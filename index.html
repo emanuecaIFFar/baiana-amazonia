@@ -29,13 +29,6 @@
         animation-delay: 0.5s;
       }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
-      }
-    }
-    </script>
   </head>
   <body class="bg-[#0a140c] text-white min-h-screen overflow-x-hidden">
 
@@ -46,7 +39,7 @@
         <nav class="hidden md:flex items-center space-x-8">
           <a href="#" class="text-white/80 hover:text-white transition-colors">Home</a>
           <a href="#about" class="text-white/80 hover:text-white transition-colors">A Floresta</a>
-          <a href="#chat" class="text-white/80 hover:text-white transition-colors">Pergunte à IA</a>
+          <a href="#chat" class="text-white/80 hover:text-white transition-colors">Pergunte</a>
           <a href="#action" class="text-white/80 hover:text-white transition-colors">Junte-se a nós</a>
         </nav>
         <div class="flex items-center bg-white/10 rounded-full px-4 py-1.5 border border-white/20">
@@ -82,16 +75,6 @@
           </div>
           <div class="w-[80%] md:w-[60%] h-px bg-white/30 mt-4"></div>
         </div>
-        
-        <svg viewBox="0 0 10 10" class="absolute top-1/2 left-10 text-white/50 w-3 h-3 animate-pulse" fill="currentColor">
-          <path d="M4 0H6V4H10V6H6V10H4V6H0V4H4V0Z" />
-        </svg>
-        <svg viewBox="0 0 10 10" class="absolute bottom-1/4 right-12 text-white/50 w-4 h-4 animate-pulse" fill="currentColor">
-          <path d="M4 0H6V4H10V6H6V10H4V6H0V4H4V0Z" />
-        </svg>
-        <svg viewBox="0 0 10 10" class="absolute top-1/3 right-20 text-white/50 w-2 h-2 animate-pulse" fill="currentColor">
-          <path d="M4 0H6V4H10V6H6V10H4V6H0V4H4V0Z" />
-        </svg>
       </section>
 
       <!-- About Section -->
@@ -103,73 +86,14 @@
               A Amazônia não é apenas uma floresta; é um sistema vital que regula o clima global, abriga uma biodiversidade incomparável e sustenta milhões de vidas. Proteger a Amazônia é proteger o futuro do nosso planeta.
             </p>
           </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white/5 p-6 rounded-lg text-center backdrop-blur-sm border border-white/10">
-              <p class="text-4xl lg:text-5xl font-bold text-[#96d117]">10%</p>
-              <p class="text-sm text-white/70 mt-2">Das espécies conhecidas do mundo vivem aqui</p>
-            </div>
-            <div class="bg-white/5 p-6 rounded-lg text-center backdrop-blur-sm border border-white/10">
-              <p class="text-4xl lg:text-5xl font-bold text-[#96d117]">20%</p>
-              <p class="text-sm text-white/70 mt-2">Do oxigênio da Terra é produzido pela floresta</p>
-            </div>
-            <div class="bg-white/5 p-6 rounded-lg text-center backdrop-blur-sm border border-white/10">
-              <p class="text-4xl lg:text-5xl font-bold text-[#96d117]">17%</p>
-              <p class="text-sm text-white/70 mt-2">Da floresta já foi perdida para o desmatamento</p>
-            </div>
-          </div>
-
-          <div class="mt-20 lg:mt-28 grid lg:grid-cols-2 gap-12 items-center">
-              <div class="relative h-80 lg:h-96 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d95?q=80&w=800&auto=format&fit=crop" alt="Amazon River" class="w-full h-full object-cover"/>
-                   <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              </div>
-              <div>
-                  <h3 class="text-3xl font-bold mb-4 text-[#b2f249]">A Urgência da Preservação</h3>
-                  <p class="text-white/80 mb-4">
-                      O desmatamento, impulsionado pela agricultura, mineração ilegal e extração de madeira, está empurrando a floresta para um ponto de inflexão. A perda da Amazônia teria consequências catastróficas, acelerando as mudanças climáticas e causando uma extinção em massa.
-                  </p>
-                  <p class="text-white/80">
-                      Nossa missão é aumentar a conscientização e impulsionar ações concretas para reverter essa tendência. Juntos, podemos garantir que a Amazônia continue a prosperar para as gerações futuras.
-                  </p>
-              </div>
-          </div>
         </div>
       </section>
 
-      <!-- Gemini Chat Section -->
+      <!-- Chat Section (sem IA, apenas ilustrativo) -->
       <section id="chat" class="py-20 lg:py-32 bg-[#0f1d13]">
-        <div class="container mx-auto px-6 max-w-4xl">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-4">Explore a Amazônia com IA</h2>
-            <p class="text-lg text-white/80">
-              Tem alguma dúvida sobre a fauna, flora, ou os desafios da Amazônia? Pergunte à nossa IA especializada.
-            </p>
-          </div>
-
-          <div class="bg-white/5 p-8 rounded-lg border border-white/10 backdrop-blur-sm">
-            <form id="chat-form">
-              <div class="flex flex-col sm:flex-row gap-4">
-                <input
-                  id="prompt-input"
-                  type="text"
-                  placeholder="Ex: Qual o maior animal da Amazônia?"
-                  class="flex-grow bg-white/10 text-white placeholder-white/50 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#96d117] transition-all"
-                />
-                <button
-                  id="submit-button"
-                  type="submit"
-                  class="bg-[#96d117] text-gray-900 font-bold px-8 py-3 rounded-md hover:bg-[#a9e83b] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-                >
-                  Perguntar
-                </button>
-              </div>
-            </form>
-
-            <div id="response-container" class="mt-8 p-6 bg-black/20 rounded-md min-h-[100px] hidden">
-              <div id="response-content"></div>
-            </div>
-          </div>
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+          <h2 class="text-4xl lg:text-5xl font-bold mb-4">Pergunte sobre a Amazônia</h2>
+          <p class="text-lg text-white/80">Esta seção está apenas ilustrativa, sem IA ativa.</p>
         </div>
       </section>
 
@@ -181,14 +105,6 @@
           <p class="max-w-2xl mx-auto text-lg text-white/80 mb-10">
             Cada ação conta. Desde a conscientização até o apoio a organizações na linha de frente, você pode fazer a diferença.
           </p>
-          <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <button class="bg-[#96d117] text-gray-900 font-bold px-8 py-4 rounded-full hover:bg-[#a9e83b] transition-transform hover:scale-105 w-full sm:w-auto">
-              Apoie um Projeto
-            </button>
-            <button class="bg-transparent border-2 border-[#96d117] text-[#96d117] font-bold px-8 py-4 rounded-full hover:bg-[#96d117]/10 transition-colors w-full sm:w-auto">
-              Compartilhe a Causa
-            </button>
-          </div>
         </div>
       </section>
     </main>
@@ -197,54 +113,21 @@
     <footer class="bg-[#0a140c] border-t border-white/10 py-8">
       <div class="container mx-auto px-6 text-center text-white/50">
         <p>&copy; 2024 Amazônia Preservation. Todos os direitos reservados.</p>
-        <p class="text-sm mt-2">Um projeto de conscientização para proteger nosso maior tesouro.</p>
       </div>
     </footer>
 
-    <script type="module">
-      import { GoogleGenAI } from "@google/genai";
-
-     <script type="module">
-  // A importação pode ser mantida ou comentada, não vai quebrar o código.
-  // import { GoogleGenAI } from "@google/genai";
-
-  // --- Gemini AI Service (Temporariamente Desativado) ---
-  // A linha abaixo causa um erro no navegador pois 'process' não existe.
-  // Vamos desativar a inicialização da IA para que o resto do script funcione.
-  const API_KEY = null; // Definimos a API_KEY como nula/falsa diretamente.
-  let ai = null;
-  /* if (API_KEY) {
-    ai = new GoogleGenAI({ apiKey: API_KEY });
-  } 
-  */
-
-  // --- Header Scroll Effect ---
-  // O restante do seu código a partir daqui permanece IGUAL.
-  // Este código agora será executado normalmente.
-  const header = document.getElementById('header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
-      header.classList.remove('bg-transparent');
-    } else {
-      header.classList.remove('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
-      header.classList.add('bg-transparent');
-    }
-  });
-  
-  // --- Gemini Chat Logic ---
-  // O código abaixo já lida com a ausência da API_KEY, então não precisa mudar.
-  const chatForm = document.getElementById('chat-form');
-  const promptInput = document.getElementById('prompt-input');
-  const submitButton = document.getElementById('submit-button');
-  // ... o resto do código do chat
-  
-  if (!API_KEY) {
-      promptInput.placeholder = "A funcionalidade de IA está desativada.";
-      promptInput.disabled = true;
-      submitButton.disabled = true;
-  }
-  // ... o resto do seu código
-</script>
+    <!-- Script apenas para efeito no cabeçalho -->
+    <script>
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header.classList.add('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
+          header.classList.remove('bg-transparent');
+        } else {
+          header.classList.remove('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
+          header.classList.add('bg-transparent');
+        }
+      });
+    </script>
   </body>
 </html>
