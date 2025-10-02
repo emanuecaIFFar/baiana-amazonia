@@ -10,24 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-      @keyframes float {
-        0%, 100% { transform: translateY(0) rotate(-12deg); }
-        50% { transform: translateY(-15px) rotate(-10deg); }
-      }
-      @keyframes float-delay {
-        0%, 100% { transform: translateY(0) rotate(12deg); }
-        50% { transform: translateY(-12px) rotate(15deg); }
-      }
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-      .animate-float-delay {
-        animation: float-delay 7s ease-in-out infinite;
-        animation-delay: 0.5s;
-      }
+      body { font-family: 'Poppins', sans-serif; }
+      @keyframes float { 0%, 100% { transform: translateY(0) rotate(-12deg);} 50% { transform: translateY(-15px) rotate(-10deg);} }
+      @keyframes float-delay { 0%, 100% { transform: translateY(0) rotate(12deg);} 50% { transform: translateY(-12px) rotate(15deg);} }
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      .animate-float-delay { animation: float-delay 7s ease-in-out infinite; animation-delay:.5s; }
     </style>
   </head>
   <body class="bg-[#0a140c] text-white min-h-screen overflow-x-hidden">
@@ -37,17 +24,15 @@
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 class="text-2xl font-bold text-white tracking-wider">Amazônia</h1>
         <nav class="hidden md:flex items-center space-x-8">
+          <!-- Home: NÃO ALTERADO -->
           <a href="#" class="text-white/80 hover:text-white transition-colors">Home</a>
-          <a href="#about" class="text-white/80 hover:text-white transition-colors">A Floresta</a>
-          <a href="#chat" class="text-white/80 hover:text-white transition-colors">Pergunte</a>
-          <a href="#action" class="text-white/80 hover:text-white transition-colors">Junte-se a nós</a>
+          <!-- Novos links -->
+          <a href="#conscientizacao" class="text-white/80 hover:text-white transition-colors">Conscientização</a>
+          <a href="#desmatamento" class="text-white/80 hover:text-white transition-colors">Desmatamento</a>
+          <a href="#futuro" class="text-white/80 hover:text-white transition-colors">Amazônia do Futuro</a>
         </nav>
         <div class="flex items-center bg-white/10 rounded-full px-4 py-1.5 border border-white/20">
-          <input
-            type="text"
-            placeholder="Search..."
-            class="bg-transparent text-white placeholder-white/50 text-sm focus:outline-none w-24 sm:w-32"
-          />
+          <input type="text" placeholder="Search..." class="bg-transparent text-white placeholder-white/50 text-sm focus:outline-none w-24 sm:w-32"/>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white/50">
             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
           </svg>
@@ -56,55 +41,129 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
+      <!-- HERO (Home) — NÃO ALTERAR -->
       <section class="relative h-[85vh] min-h-[700px] w-full flex items-center justify-center text-center overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('photos/pexels-tomfisk-2739664.jpg');">
           <div class="absolute inset-0 bg-black/40"></div>
         </div>
-        
         <div class="relative z-10 flex flex-col items-center">
           <div class="relative w-full">
-              <h1 class="text-white font-extrabold text-[12vw] sm:text-[10vw] md:text-9xl lg:text-[12rem] leading-none tracking-tighter" style="text-shadow: 0 4px 15px rgba(0,0,0,0.3)">
-                  Amazônia
-              </h1>
-              <div class="absolute top-[0.1em] left-[2.2em] md:left-[2.1em] lg:left-[2.15em] w-[0.6em] h-[0.6em] bg-[#96d117] rounded-full"></div>
-              <div class="absolute bottom-[0.3em] right-[3.3em] md:right-[3.35em] lg:right-[3.35em] w-[0.3em] h-[0.3em] bg-white/80 rounded-full"></div>
-
-              <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -bottom-1 -left-2 w-[5em] h-auto transform -rotate-12 animate-float" />
-              <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -top-1 right-[2em] w-[4em] h-auto transform rotate-12 animate-float-delay" />
+            <h1 class="text-white font-extrabold text-[12vw] sm:text-[10vw] md:text-9xl lg:text-[12rem] leading-none tracking-tighter" style="text-shadow: 0 4px 15px rgba(0,0,0,0.3)">
+              Amazônia
+            </h1>
+            <div class="absolute top-[0.1em] left-[2.2em] md:left-[2.1em] lg:left-[2.15em] w-[0.6em] h-[0.6em] bg-[#96d117] rounded-full"></div>
+            <div class="absolute bottom-[0.3em] right-[3.3em] md:right-[3.35em] lg:right-[3.35em] w-[0.3em] h-[0.3em] bg-white/80 rounded-full"></div>
+            <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -bottom-1 -left-2 w-[5em] h-auto transform -rotate-12 animate-float" />
+            <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -top-1 right-[2em] w-[4em] h-auto transform rotate-12 animate-float-delay" />
           </div>
           <div class="w-[80%] md:w-[60%] h-px bg-white/30 mt-4"></div>
         </div>
       </section>
 
-      <!-- About Section -->
-      <section id="about" class="py-20 lg:py-32 bg-gradient-to-b from-[#0a140c] to-[#0f1d13]">
+      <!-- 1) CONSCIENTIZAÇÃO -->
+      <section id="conscientizacao" class="py-20 lg:py-32 bg-gradient-to-b from-[#0a140c] to-[#0f1d13]">
         <div class="container mx-auto px-6">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-4">O Coração Verde do Mundo</h2>
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">Conscientização: Preservar as Maravilhas da Floresta Amazônica</h2>
             <p class="text-lg text-white/80 leading-relaxed">
-              A Amazônia não é apenas uma floresta; é um sistema vital que regula o clima global, abriga uma biodiversidade incomparável e sustenta milhões de vidas. Proteger a Amazônia é proteger o futuro do nosso planeta.
+              A beleza da Amazônia inspira e educa. Veja, compartilhe e ajude a proteger.
             </p>
+          </div>
+
+          <!-- Galeria moderna (masonry responsivo) -->
+          <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            <!-- SUBSTITUA as imagens abaixo pelas suas (mantenha proporções variadas para efeito 'masonry') -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-1.jpg" alt="Floresta densa"/> <!-- SUBSTITUA -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-2.jpg" alt="Rios da Amazônia"/> <!-- SUBSTITUA -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-3.jpg" alt="Biodiversidade"/> <!-- SUBSTITUA -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-4.jpg" alt="Comunidades tradicionais"/> <!-- SUBSTITUA -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-5.jpg" alt="Copa das árvores"/> <!-- SUBSTITUA -->
+            <img class="w-full rounded-2xl shadow-lg shadow-black/30 border border-white/10" src="photos/consc-6.jpg" alt="Fauna amazônica"/> <!-- SUBSTITUA -->
+          </div>
+
+          <!-- Mini-cta -->
+          <div class="mt-12 text-center">
+            <p class="text-white/70">Dica: Use imagens em <em>alta resolução</em> para manter a qualidade do layout.</p>
           </div>
         </div>
       </section>
 
-      <!-- Chat Section (sem IA, apenas ilustrativo) -->
-      <section id="chat" class="py-20 lg:py-32 bg-[#0f1d13]">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-          <h2 class="text-4xl lg:text-5xl font-bold mb-4">Pergunte sobre a Amazônia</h2>
-          <p class="text-lg text-white/80">Esta seção está apenas ilustrativa, sem IA ativa.</p>
+      <!-- 2) DESMATAMENTO -->
+      <section id="desmatamento" class="relative py-20 lg:py-32">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(150,209,23,0.08),_transparent_60%)] pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-4xl lg:text-5xl font-bold mb-6">Desmatamento: Causas e Consequências</h2>
+              <p class="text-white/80 leading-relaxed mb-6">
+                O desmatamento ameaça o ciclo das chuvas, a biodiversidade e o modo de vida de milhões de pessoas. Combater exige informação, fiscalização e alternativas econômicas sustentáveis.
+              </p>
+
+              <!-- Cards de dados (placeholders) -->
+              <div class="grid sm:grid-cols-3 gap-4">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                  <div class="text-3xl font-extrabold">%</div>
+                  <p class="text-sm text-white/70">Taxa anual<br><span class="text-xs">/* SUBSTITUA por dado real */</span></p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                  <div class="text-3xl font-extrabold">km²</div>
+                  <p class="text-sm text-white/70">Área afetada<br><span class="text-xs">/* SUBSTITUA por dado real */</span></p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                  <div class="text-3xl font-extrabold">🟢</div>
+                  <p class="text-sm text-white/70">Áreas protegidas<br><span class="text-xs">/* SUBSTITUA por dado real */</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide simples de imagens (estáticas) -->
+            <div class="space-y-4">
+              <!-- SUBSTITUA as imagens abaixo por fotos de desmatamento -->
+              <img src="photos/desmate-1.jpg" alt="Área desmatada" class="w-full h-64 object-cover rounded-2xl border border-white/10 shadow-lg shadow-black/30"/> <!-- SUBSTITUA -->
+              <div class="grid grid-cols-2 gap-4">
+                <img src="photos/desmate-2.jpg" alt="Queimada" class="h-48 w-full object-cover rounded-2xl border border-white/10 shadow-lg shadow-black/30"/> <!-- SUBSTITUA -->
+                <img src="photos/desmate-3.jpg" alt="Exploração madeireira" class="h-48 w-full object-cover rounded-2xl border border-white/10 shadow-lg shadow-black/30"/> <!-- SUBSTITUA -->
+              </div>
+              <p class="text-xs text-white/60 text-center">/* Troque os arquivos em <code>photos/</code> pelos seus */</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Call to Action Section -->
-      <section id="action" class="relative py-24 lg:py-36 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop')">
+      <!-- 3) AMAZÔNIA DO FUTURO (inventada) -->
+      <section id="futuro" class="relative py-24 lg:py-36 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop')">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
-        <div class="relative container mx-auto px-6 text-center">
-          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Seja a Mudança que a Amazônia Precisa</h2>
-          <p class="max-w-2xl mx-auto text-lg text-white/80 mb-10">
-            Cada ação conta. Desde a conscientização até o apoio a organizações na linha de frente, você pode fazer a diferença.
-          </p>
+        <div class="relative container mx-auto px-6">
+          <div class="max-w-3xl text-center mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">Amazônia do Futuro</h2>
+            <p class="text-lg text-white/80 mb-10">
+              Tecnologia, comunidades e educação caminhando juntas para restaurar e proteger a floresta.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="rounded-3xl p-6 bg-white/10 border border-white/15 backdrop-blur-md hover:bg-white/15 transition">
+              <h3 class="text-xl font-bold mb-2">Tecnologia a Favor</h3>
+              <p class="text-white/80 text-sm">Drones, satélites e IA para monitoramento em tempo real e alerta precoce.</p>
+            </div>
+            <div class="rounded-3xl p-6 bg-white/10 border border-white/15 backdrop-blur-md hover:bg-white/15 transition">
+              <h3 class="text-xl font-bold mb-2">Economia da Floresta</h3>
+              <p class="text-white/80 text-sm">Cadeias produtivas sustentáveis que geram renda sem derrubar árvores.</p>
+            </div>
+            <div class="rounded-3xl p-6 bg-white/10 border border-white/15 backdrop-blur-md hover:bg-white/15 transition">
+              <h3 class="text-xl font-bold mb-2">Educação & Cultura</h3>
+              <p class="text-white/80 text-sm">Fortalecimento de saberes tradicionais e educação ambiental nas escolas.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-10">
+            <a href="#"
+               class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#96d117] text-black font-semibold hover:brightness-110 transition">
+              Saiba como participar
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <p class="text-white/70 text-sm mt-3">/* Altere o link acima para sua página de ação/campanha */</p>
+          </div>
         </div>
       </section>
     </main>
@@ -116,15 +175,15 @@
       </div>
     </footer>
 
-    <!-- Script apenas para efeito no cabeçalho -->
+    <!-- Script do cabeçalho -->
     <script>
       const header = document.getElementById('header');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
-          header.classList.add('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
+          header.classList.add('bg-black/50','backdrop-blur-md','shadow-lg');
           header.classList.remove('bg-transparent');
         } else {
-          header.classList.remove('bg-black/50', 'backdrop-blur-md', 'shadow-lg');
+          header.classList.remove('bg-black/50','backdrop-blur-md','shadow-lg');
           header.classList.add('bg-transparent');
         }
       });
