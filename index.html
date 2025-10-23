@@ -1,4 +1,4 @@
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazônia</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,16 +48,12 @@
             </h1>
             <div class="absolute top-[0.1em] left-[2.2em] md:left-[2.1em] lg:left-[2.15em] w-[0.6em] h-[0.6em] bg-[#96d117] rounded-full"></div>
             <div class="absolute bottom-[0.3em] right-[3.3em] md:right-[3.35em] lg:right-[3.35em] w-[0.3em] h-[0.3em] bg-white/80 rounded-full"></div>
-            <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -bottom-1 -left-2 w-[5em] h-auto transform -rotate-12 animate-float" />
-            <img src="photos/11592272-removebg-preview.png" alt="Floating Leaf" class="absolute -top-1 right-[2em] w-[4em] h-auto transform rotate-12 animate-float-delay" />
+            <img src="photos/11592272-removebg-preview.png" alt="Folha amazônica flutuando" class="absolute -bottom-1 -left-2 w-[5em] h-auto transform -rotate-12 animate-float cursor-zoom-in" data-enlarge />
+            <img src="photos/11592272-removebg-preview.png" alt="Folha amazônica suspensa" class="absolute -top-1 right-[2em] w-[4em] h-auto transform rotate-12 animate-float-delay cursor-zoom-in" data-enlarge />
           </div>
           <div class="w-[80%] md:w-[60%] h-px bg-white/30 mt-4"></div>
           <p class="mt-8 text-base sm:text-lg text-white/90 max-w-3xl mx-auto italic">
             “Não podemos adiar para amanhã o mundo que precisamos reinventar hoje.” — Ailton Krenak
-          </p>
-          <p class="mt-4 text-sm sm:text-base text-white/70 max-w-2xl mx-auto">
-            Celebramos a Amazônia viva, suas águas e povos, convidando você a explorar histórias, dados e caminhos para proteger
-            a maior floresta tropical do planeta.
           </p>
         </div>
       </section>
@@ -422,10 +418,12 @@
           </div>
 
           <div class="text-center mt-10">
-            <a href="#"
+            <a href="https://github.com/baiana-amazonia" target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#96d117] text-black font-semibold hover:brightness-110 transition">
-              Compartilhe e faça parte
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 5l7 7-7 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.528 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.55 9.55 0 0 1 2.5.336c1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.36.31.68.92.68 1.855 0 1.338-.012 2.418-.012 2.747 0 .268.18.58.688.481A10.004 10.004 0 0 0 22 12c0-5.525-4.475-10-10-10Z" clip-rule="evenodd" />
+              </svg>
+              <span>Compartilhe e faça parte</span>
             </a>
             <p class="text-white/70 text-sm mt-3">Personalize o link acima com a sua campanha, coletivo ou repositório espelhado.</p>
           </div>
@@ -434,9 +432,85 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0a140c] border-t border-white/10 py-8">
-      <div class="container mx-auto px-6 text-center text-white/50">
-        <p>&copy; 2024 Amazônia Preservation. Todos os direitos reservados.</p>
+    <footer class="relative bg-[#071008] border-t border-white/10">
+      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-60"></div>
+      <div class="container mx-auto px-6 py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.2fr_repeat(3,minmax(0,1fr))]">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="inline-block uppercase tracking-[0.4em] text-xs text-[#96d117]/80">Baianá, Amazônia</span>
+              <h3 class="text-2xl sm:text-3xl font-semibold">Celebramos a Amazônia viva</h3>
+            </div>
+            <p class="text-white/70 text-sm sm:text-base leading-relaxed">
+              Celebramos a Amazônia viva, suas águas e povos, convidando você a explorar histórias, dados e caminhos para proteger
+              a maior floresta tropical do planeta.
+            </p>
+            <div class="flex flex-wrap gap-3 text-sm text-white/60">
+              <a href="#" class="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 hover:border-[#96d117]/60 hover:text-white transition">
+                <span class="h-2 w-2 rounded-full bg-[#96d117]"></span>
+                Voltar ao topo
+              </a>
+              <a href="https://github.com/baiana-amazonia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 hover:border-[#96d117]/60 hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                  <path fill-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.528 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.55 9.55 0 0 1 2.5.336c1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.36.31.68.92.68 1.855 0 1.338-.012 2.418-.012 2.747 0 .268.18.58.688.481A10.004 10.004 0 0 0 22 12c0-5.525-4.475-10-10-10Z" clip-rule="evenodd" />
+                </svg>
+                Refaça este repositório
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Explorar</h4>
+            <ul class="space-y-2 text-white/60 text-sm">
+              <li><a href="#" class="hover:text-white transition">Home</a></li>
+              <li><a href="#conscientizacao" class="hover:text-white transition">Conscientização</a></li>
+              <li><a href="#desmatamento" class="hover:text-white transition">Desmatamento</a></li>
+              <li><a href="#apresentacao" class="hover:text-white transition">Apresentação</a></li>
+              <li><a href="#futuro" class="hover:text-white transition">Amazônia do Futuro</a></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Conectar</h4>
+            <ul class="space-y-3 text-white/60 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="mailto:contato@amazonia.dev" class="hover:text-white transition">contato@amazonia.dev</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="https://instagram.com/amazonia" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">@amazonia</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="https://t.me/amazonia" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Comunidade Amazônia Viva</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Recursos Abertos</h4>
+            <ul class="space-y-3 text-white/60 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="https://data.inpe.br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Dados PRODES/DETER</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="https://mapbiomas.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">MapBiomas Amazônia</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-[#96d117]"></span>
+                <a href="https://povosindigenas.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Povos Indígenas no Brasil</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2024 Amazônia Preservation. Todos os direitos reservados.</p>
+          <p class="text-white/40">Design inspirado em narrativas vivas da floresta.</p>
+        </div>
       </div>
     </footer>
 
